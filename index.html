@@ -3,10 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+    <title>Formulário de Inscrição</title>
 </head>
 <body>
-    <h1>Bem-vindo ao Meu Site</h1>
-    <p>Esta é minha primeira página criada usando GitHub e Visual Studio Code.</p>
+    <h1>Formulário de Inscrição</h1>
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+        <fieldset>
+            <legend>Dados de Acesso</legend>
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" name="usuario" required><br><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required><br><br>
+
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" required><br><br>
+
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento" name="complemento"><br><br>
+
+            <label for="cidade">Cidade:</label>
+            <input list="cidades" id="cidade" name="cidade" required>
+            <datalist id="cidades">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Belo Horizonte">
+                <option value="Salvador">
+                <option value="Curitiba">
+            </datalist><br><br>
+
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="BA">Bahia</option>
+                <option value="PR">Paraná</option>
+            </select><br><br>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required><br><br>
+            
+            <label>Gênero:</label><br>
+            <input type="radio" id="masculino" name="genero" value="Masculino" required>
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="feminino" name="genero" value="Feminino" required>
+            <label for="feminino">Feminino</label><br>
+            <input type="radio" id="nao-informar" name="genero" value="Prefiro não falar" required>
+            <label for="nao-informar">Prefiro não falar</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Curso</legend>
+            <input type="checkbox" id="ads" name="curso" value="ADS">
+            <label for="ads">ADS</label><br>
+
+            <input type="checkbox" id="jogos" name="curso" value="Jogos">
+            <label for="jogos">Jogos</label><br>
+
+            <input type="checkbox" id="gestao-ti" name="curso" value="Gestão de TI">
+            <label for="gestao-ti">Gestão de TI</label><br>
+
+            <input type="checkbox" id="banco-dados" name="curso" value="Banco de Dados">
+            <label for="banco-dados">Banco de Dados</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Modelo</legend>
+            <input type="radio" id="presencial" name="modelo" value="Presencial" required>
+            <label for="presencial">Presencial</label><br>
+            
+            <input type="radio" id="ead" name="modelo" value="EAD" required>
+            <label for="ead">EAD</label><br>
+            
+            <input type="radio" id="semi-presencial" name="modelo" value="Semi presencial" required>
+            <label for="semi-presencial">Semi presencial</label><br><br>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
