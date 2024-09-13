@@ -1,0 +1,71 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+/* Menu de navegação */
+nav {
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o menu fique acima do conteúdo */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Alinha o menu à esquerda */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Espaço para evitar sobreposição do conteúdo com o menu fixo */
+body {
+    padding-top: 60px; /* Adiciona espaço para o menu fixo */
+}
+
+/* Títulos */
+h1, h2 {
+    color: #333;
+}
+
+/* Imagem */
+img {
+    max-width: 200px; /* Define um tamanho máximo para a imagem */
+    height: auto;
+    border-radius: 10px; /* Bordas levemente arredondadas */
+    border: 2px solid black; /* Adiciona uma borda preta fina */
+    float: left; /* Alinha a imagem à esquerda */
+    margin-right: 20px; /* Adiciona espaço entre a imagem e o texto */
+    margin-bottom: 20px;
+}
+
+.custom-image {
+    max-width: 500px; /* Define um tamanho máximo para a imagem */
+    height: auto;
+    border-radius: 10px; /* Bordas levemente arredondadas */
+    border: 2px solid black; /* Adiciona uma borda preta fina */
+    float: left; /* Alinha a imagem à esquerda */
+    margin-right: 20px; /* Adiciona espaço entre a imagem e o texto */
+    margin-bottom: 20px;
+}
