@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    padding: 20px;
+}
+
+.header {
+    text-align:unset;
+    margin-bottom: 10px;
+    padding-left: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 15px;
+    font-style: normal;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    max-width: 500px;
+    margin: 0 200px 10px auto;
+    text-align: justify;
+    display: flex;  
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 125px;
+}
+
+button {
+    padding: 12px 45px;
+    font-size: 25px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+.badges-section {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.badge img {
+    width: 148.9px;
+    height: 148px;
+    border-radius: 50%;
+    object-fit: cover;
+    top: 454px;
+    left: 120px;
+}
+
+.right-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.image-wrapper:first-child {
+    margin-top: -150px;
+}
+
+.image-wrapper:nth-child(2) {
+    margin-top: -75px;
+}
+
+.image-wrapper:nth-child(3) {
+    margin-top: -40px;
+}
+
+.image-wrapper:nth-child(4) {
+    margin-top: 40px;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 0px solid #333;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.custom-text {
+    font-size: 16px;
+    color: #333333;
+    text-align: justify;
+    max-width: 487px; 
+    margin-left: 4px;
+    margin-top: 67px; 
+}
+
+.cta-button {
+    padding: 12px 45px;
+    font-size: 25px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.texto {
+    margin-left: 125px;
+    margin-top: 0px;
+}
