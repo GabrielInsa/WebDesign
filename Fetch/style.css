@@ -1,0 +1,103 @@
+/* Estilo geral da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Container principal */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Título */
+h1 {
+    color: #4a4a4a;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Estilo do formulário e campos */
+.form-field {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+/* Botão de envio */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Lista de animais */
+#animalList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+#animalList li {
+    padding: 12px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    font-size: 18px;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+#animalList li:hover {
+    background-color: #f1f1f1;
+}
